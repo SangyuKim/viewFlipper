@@ -39,7 +39,10 @@ public class MainActivity extends AppCompatActivity {
         viewFlipper.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
-                return false;
+                if(event.getAction() == MotionEvent.ACTION_SCROLL){
+
+                }
+                    return false;
             }
         });
     }
